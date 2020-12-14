@@ -59,6 +59,29 @@
 }
 
 /* Begin styling the report items here! */
-.reports {
 
+.reports {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.reports_item {
+	width: 33.33%;
+	padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+	.reports_item {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 658px) {
+	.reports {
+		justify-content: center;
+	}
+	.reports_item {
+		width: 60%;
+	}
 }
